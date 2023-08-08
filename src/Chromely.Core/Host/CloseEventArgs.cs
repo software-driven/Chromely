@@ -8,4 +8,5 @@ namespace Chromely.Core.Host;
 /// </summary>
 public class CloseEventArgs : EventArgs
 {
+    public bool Cancel { get; set; } = false;
 }

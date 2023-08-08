@@ -545,7 +545,10 @@ public partial class ChromelyLinuxHost : IChromelyNativeHost
         Xilium.CefGlue.CefRuntime.QuitMessageLoop();
         if (_handle != IntPtr.Zero && _isInitialized)
         {
-            HostClose?.Invoke(this, new CloseEventArgs());
+            var args = new CloseEventArgs();
+            HostClose?.Invoke(this, args);
+            if (args.Cancel)
+                return true;
         }
 
         return false;

@@ -269,7 +269,10 @@ public partial class ChromelyMacHost : IChromelyNativeHost
         try
         {
             CefRuntime.QuitMessageLoop();
-            HostClose?.Invoke(this, new CloseEventArgs());
+            var args = new CloseEventArgs();
+            HostClose?.Invoke(this, args);
+            if (args.Cancel)
+                return;
             Environment.Exit(0);
         }
         catch (Exception exception)

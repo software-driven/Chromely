@@ -615,7 +615,10 @@ public abstract partial class NativeHostBase : IChromelyNativeHost
                 {
                     if (_handle != IntPtr.Zero && _isInitialized)
                     {
-                        HostClose?.Invoke(this, new CloseEventArgs());
+                        var args = new CloseEventArgs();
+                        HostClose?.Invoke(this, args);
+                        if (args.Cancel)
+                            return IntPtr.Zero;
                     }
 
                     DetachHooks();
