@@ -115,4 +115,11 @@ public interface IChromelyNativeHost : IDisposable
     /// </summary>
     /// <param name="hWnd">The window host handle.</param>
     void ToggleFullscreen(IntPtr hWnd);
+
+    /// <summary>
+    /// Check if window is not full screen.
+    /// </summary>
+    /// <param name="hWnd">The window handle.</param>
+    /// <returns>true if not full screen, otherwise false.</returns>
+    bool IsWindowed(IntPtr hWnd);
 }
