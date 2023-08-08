@@ -150,6 +150,11 @@ public partial class ChromelyMacHost : IChromelyNativeHost
         Logger.Instance.Log.LogInformation("ChromelyMacHost::SetWindowTitle is not implemented yet!");
     }
 
+    /// <inheritdoc/>
+    public virtual bool IsWindowed(IntPtr hWnd)
+    {
+        return _options.WindowState != WindowState.Fullscreen;
+    }
 
     /// <inheritdoc/>
     public virtual void ToggleFullscreen(IntPtr hWnd)

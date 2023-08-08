@@ -89,7 +89,7 @@ public abstract partial class NativeHostBase
     /// </summary>
     /// <param name="hWnd">The window handle.</param>
     /// <returns>true if not full screen, otherwise false.</returns>
-    protected virtual bool IsWindowed(IntPtr hWnd)
+    public virtual bool IsWindowed(IntPtr hWnd)
     {
         return _options.WindowState != WindowState.Fullscreen;
     }

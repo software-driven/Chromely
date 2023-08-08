@@ -238,6 +238,12 @@ public partial class ChromelyLinuxHost : IChromelyNativeHost
     }
 
     /// <inheritdoc/>
+    public virtual bool IsWindowed(IntPtr hWnd)
+    {
+        return _options.WindowState != WindowState.Fullscreen;
+    }
+
+    /// <inheritdoc/>
     public virtual void ToggleFullscreen(IntPtr hWnd)
     {
     }
