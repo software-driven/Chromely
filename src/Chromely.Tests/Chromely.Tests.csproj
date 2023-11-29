@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <!-- <TargetFramework>netcoreapp3.1</TargetFramework>  -->
     <IsPackable>false</IsPackable>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -17,16 +17,16 @@
 
   <ItemGroup>
     <PackageReference Include="Bogus" Version="34.0.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.4" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
-    <PackageReference Include="xunit" Version="2.4.1" />
-    <PackageReference Include="Xunit.DependencyInjection" Version="8.5.0" />
-    <PackageReference Include="Xunit.DependencyInjection.Logging" Version="8.0.1" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.6.2" />
+    <PackageReference Include="Xunit.DependencyInjection" Version="8.9.0" />
+    <PackageReference Include="Xunit.DependencyInjection.Logging" Version="8.1.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="coverlet.collector" Version="3.1.2">
+    <PackageReference Include="coverlet.collector" Version="6.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

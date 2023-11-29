@@ -1,10 +1,10 @@
 ﻿<Project>
 
 	<PropertyGroup>
-		<ProductVersion>5.2.101.3</ProductVersion>
-		<AssemblyVersion>5.2.101.3</AssemblyVersion>
-		<FileVersion>5.2.101.3</FileVersion>
-		<Version>5.2.101.3</Version>
+		<ProductVersion>5.2.101.4</ProductVersion>
+		<AssemblyVersion>5.2.101.4</AssemblyVersion>
+		<FileVersion>5.2.101.4</FileVersion>
+		<Version>5.2.101.4</Version>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Product>Chromely</Product>
@@ -14,8 +14,8 @@
 		<Copyright>Copyright © 2017 Chromely Projects</Copyright>
 		<PackageProjectUrl>https://github.com/chromelyapps/Chromely</PackageProjectUrl>
 		<PackageIcon>chromely.png</PackageIcon>
-		<PackageTags>CEF Chromium HTML5 Desktop Chromely CefGlue .NET 6</PackageTags>
-		<Description>Primary Chromely implementation library - this is in .NET 6 and cross-platform - can be used in Windows, Linux, MacOS. Chromely version naming is based Chromely and Chromium versions implemented- major.minor.chromuim version.patch e.g 1.0.70.0.</Description>
+		<PackageTags>CEF Chromium HTML5 Desktop Chromely CefGlue .NET 8</PackageTags>
+		<Description>Primary Chromely implementation library - this is in .NET 8 and cross-platform - can be used in Windows, Linux, MacOS. Chromely version naming is based Chromely and Chromium versions implemented- major.minor.chromuim version.patch e.g 1.0.70.0.</Description>
 		<PackageReleaseNotes>
 			- Fixed - https://github.com/chromelyapps/Chromely/issues/365
 			- Fixed - https://github.com/chromelyapps/Chromely/issues/368
